@@ -32,9 +32,17 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
-## Slide with Plot
+## Slide with Bullets
 
 ```{r pressure}
 plot(pressure)
 ```
+
+## Gráfico con Ggplot2
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+ggplot(data = iris, aes(x = Sepal.Width, y = Petal.Width, shape = Species, color = Species)) + geom_point(size = 4)
+```
+
 
